@@ -1,0 +1,194 @@
+%-------------------------
+% Resume in Latex
+% License : MIT
+% Edited: Prem Shah (Author: Sourabh Bajaj)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+%\renewcommand{\familydefault}{\sfdefault}
+%\fontfamily{garamond}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemTwo}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \hfill \small  #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubheadingTwo}[5]{
+	\vspace{-1pt}\item{
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{\small #1} & \hfill  \small #2 \\
+		\textit{\small#3} & \textit{\small #4} 
+	\end{tabular*} \\ \vspace{1.5pt}
+ \small #5 \vspace{-4pt}} 
+}
+
+\newcommand{\resumeSubheadingThree}[2]{
+	\vspace{-1pt}\item{
+		\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+			\textbf{\small #1} & \small #2 
+		\end{tabular*} \vspace{-6pt}} 
+}
+
+\newcommand{\resumeSubheadingFour}[4]{
+	\vspace{-1pt}\item{
+		\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+			\textbf{\small #1}, \small #2, \small #3 & \small #4 
+		\end{tabular*} \vspace{-6pt}} 
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Prem Shah}} & \small 4231 12th Ave NE Apt. No. 108, Seattle, WA - 98105\\ \small
+  \href{https://www.linkedin.com/in/prem-shah-bb16aa10a/}{LinkedIn} $|$ \href{https://github.com/axelnine}{GitHub} & \small  Email : \href{mailto:prems2@uw.edu}{prems2@uw.edu} $|$ Mobile : +1-206-427-4930 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingTwo
+      {University of Washington, Information School}{Seattle, WA}
+      {Master of Science in Information Management (Specialization in Data Science);  GPA: 3.8}{Sep. 2017 -- Jun. 2019}{Relevant Coursework: Theoretical Foundations of Data Science, Visualization Design, Analytical Methods for Research}
+      
+    \resumeSubheadingTwo
+      {Ahmedabad University, School of Engineering \& Applied Science}{ Ahmedabad, India}
+      {Bachelor of Technology in Information \& Communication Technology}{Jul 2013 -- May 2017}{Relevant Coursework: Data Structures and Algorithms, Database Management Systems, Data Analytics \& Visualization, Linear  Algebra, Probability, Discrete Mathematics, Models of Computation, Internet of Things.}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+\resumeSubHeadingListStart
+\resumeSubItem{Languages}
+{C, Python, R, SQL, HTML.}
+\resumeSubItem{Libraries}
+{Keras, Scikit-learn, Nltk, Pandas, Numpy, ggplot2, dplyr.}
+\resumeSubItem{Tools}
+{Tableau, Microsoft Excel, Weka, MATLAB, MySQL Workbench, Spyder.}
+
+\resumeSubHeadingListEnd
+\vspace{-9pt}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheadingTwo
+      {Exponentia Datalabs}{Mumbai, India}{Intern, Text Analytics}{Jan 2017 -- Apr 2017}{\textit{Exponentia Datalabs is a growing analytics company specializing in end-to-end solutions for customer support analytics.}} \vspace{-2pt}
+      \resumeItemListStart
+		\resumeItemTwo{Migrated the sentiment analysis component of the company’s product from Support Vector Machines to Recurrent Neural Networks. Improved the accuracy of the model from 78\% to 86\%.}
+		\resumeItemTwo{Researched and developed a phrase chunking component to extract noun, adjectives and verb phrases. Further improved the accuracy and precision by approximately 2\%. Integral component to extract multiple sentiments.} 
+		\resumeItemTwo{Reduced training time by 10\% by optimizing different hyperparameters in keras.}
+		\resumeItemTwo{Connected database through MySQL connector to give real-time sentiment analysis.}
+		\resumeItemListEnd
+    
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheadingThree
+{Quantitative Research: Factors affecting the ethical usage of assistive technology for dementia}{\textit{Sep 2017 -- Dec 2017}}
+\resumeItemListStart
+\resumeItemTwo{Used chi-square testing to check relation between various demographic variables and the level of impairment using the NACC dataset.}
+\resumeItemTwo{Analyzed survey and telephonic interview data to understand trends regarding the knowledge of dementia.} 
+\resumeItemTwo{Presented recommendations for improving the development of assistive technology conforming to our findings.}
+\resumeItemListEnd
+
+    \resumeSubheadingThree
+{Data Modelling, Internet of Things: Intelligent Energy Consumption Module for Homes}{\textit{Aug 2016 -- Dec 2016}}
+\resumeItemListStart
+\resumeItemTwo{Applied weather data and household consumption dataset modelled on a Multivariate Linear Regression classifier from scratch to predict the power consumption of households to better organize power management. }
+\resumeItemTwo{The system interfaced a temperature sensor to calculate indoor temperature, humidity and heat index.} 
+\resumeItemTwo{Built and implemented algorithm to calculate highest consumption hours from data.}
+\resumeItemListEnd
+
+    \resumeSubheadingThree
+{Database Management: Medical Search Engine}{\textit{Aug 2015 - Dec 2015}}
+\resumeItemListStart
+\resumeItemTwo{Integrated and developed user search for nearby medical facilities and information using MySQL. Included functionality to search for nearest hospitals and drugstores based on user’s current geographical location. }
+\resumeItemTwo{Utilized user’s past search data and current geographical location to give results through querying and transaction processing. Also gave recommendations based on past searches} 
+\resumeItemTwo{Created wireframes for user interaction using Pencil. Awarded the Best Project in class.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%
+\section{Other Work Experience}
+\resumeSubHeadingListStart
+\resumeSubheadingFour
+{University Of Washington Dining}{\textit{Student Assistant}}{Seattle, WA}{\textit{Sep 2017 -- Present}}\vspace{-1pt}
+\resumeSubheadingFour
+{Ahmedabad University}{\textit{Teaching Assistant (Computer Science 111)}}{Ahmedabad, India}{\textit{Jul 2016 -- Dec 2016}}\vspace{-1pt}
+\resumeSubheadingFour
+{Apang Manav Mandal (School for the Disabled)}{\textit{Teaching Volunteer}}{Ahmedabad, India}{\textit{Jul 2015 -- Sep 2015}}\vspace{-1pt}
+\resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
