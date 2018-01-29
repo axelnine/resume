@@ -3,4 +3,4 @@ A single page one column resume for software developers. It uses the base latex 
 ### Courtesy
 Sourabh Bajaj
 ### License
-Format is MIT.
+Format is MIT, data owned by Prem Shah.
