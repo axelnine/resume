@@ -4,6 +4,8 @@ A single page one column resume for software developers. It uses the base latex 
 
 Each part is divided into a section by a separating comment. To run, please download the tex file and run it in a LateX editor. TexStudio is advised.
 
+You can define your own classes of sections by modifying the section builder at the top of the TeX file.
+
 ### Courtesy
 
 [Sourabh Bajaj](https://github.com/sb2nov)
